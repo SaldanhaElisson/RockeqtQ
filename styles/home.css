@@ -1,0 +1,73 @@
+.content{
+    display:grid;
+    grid-template-columns: 60% 40% ; 
+    /* aqui temos duas colunas com uma com 60% e outra de 40% */
+
+    grid-template-rows: 11.4rem 1fr;
+    /* definido o tamanho da linha  */
+
+    grid-template-areas: 'header header' 'left right';
+}
+
+header{
+    grid-area: header;
+}
+
+#bg{
+    grid-area: left;
+
+    background: url(../assets/home-bg-img.svg) no-repeat top/contain;
+    background-position-x: -12rem;
+}
+
+main{
+    grid-area:right;
+
+    display:flex;
+    align-items:center;
+    margin-top: -12rem;
+}
+
+main .container{
+    /* min vai da preferencia pra pegar o menor valor, se o menor valor for o 100% da tela, então ele vai pegar o menor, mas se o 100% da tela for maior ele vai pegar o 36.3 rem  */
+    width: min(36.3rem, 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color:var(--black);
+    font-size:clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+input{
+    border: .2rem solid var(--grey-blue);
+    padding:0 1.6rem;
+}
+
+input, button, .button{
+    width:100%;
+    margin-bottom: 1.8rem;
+}
+
+.ball{
+    width:21.2rem;
+    height:21.2rem;
+    background:var(--blue);
+    clip-path: circle();
+
+    position:fixed;
+    opacity: 0.3;
+}
+.ball.top{
+    width:63.3rem;
+    height:63.3rem;
+    top:-46rem;
+    right:-35rem
+
+}
+.ball.bottom{
+    bottom:-15rem;
+    right:5.6rem;
+    
+}
