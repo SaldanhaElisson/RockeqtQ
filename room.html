@@ -9,6 +9,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles/globa.css">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,9 +55,9 @@
                 <div class="questions">
 
                     <div class="question-wrapper">
-                        <div class="question-conte">
+                        <div class="question-content">
                             <div class="user">
-                                <img src="assets/Avatar.svg" alt="avatar">
+                                <img src="assets/user.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const, var e let no JavaScript?</p>
@@ -74,9 +75,73 @@
                         </div>
                     </div>
 
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>O que é java Script?</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a href="" class="check">
+                                <img src="assets/check .svg" alt=" marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="" class="delete">
+                                <img src="assets/trash 1.svg" alt=" excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>O que é python</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a href="" class="check">
+                                <img src="assets/check .svg" alt=" marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="" class="delete">
+                                <img src="assets/trash 1.svg" alt=" excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </main>
- 
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Exclui perguntar</h2>
+            <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+            <form action="#">
+                <label class="sr-only">Digite sua senha</label>
+                <input type="password" name="password" placeholder="Digite sua senha"> 
+
+                <div class="buttons ">
+                    <div class="button grey">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+
+            </form>
+        </div>
+        
+
+    </div>
 </body>
 </html>
