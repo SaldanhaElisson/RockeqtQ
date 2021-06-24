@@ -1,0 +1,27 @@
+{
+  "name": "rockeqt",
+  "version": "1.0.0",
+  "description": "Projetos perguntas anonimas com administradores para filtrar as perguntas",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaldanhaElisson/RockeqtQ.git"
+  },
+  "keywords": [],
+  "author": "Elisson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaldanhaElisson/RockeqtQ/issues"
+  },
+  "homepage": "https://github.com/SaldanhaElisson/RockeqtQ#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1" 
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

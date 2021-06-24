@@ -20,15 +20,15 @@
     <div id="room" class="content">
         <header>
             <a href="home.html">
-                <img src="assets/logo.svg" alt="Rockeqt.Q logo" srcset="">
+                <img src="img/logo.svg" alt="Rockeqt.Q logo" srcset="">
             </a>
             <div class="buttons">
                 <div class="button outlined">
                     #323243
-                    <img src="assets/copy.svg" alt="copiar um numero" >
+                    <img src="img/copy.svg" alt="copiar um numero" >
                 </div>
                 <a hre="#" class="button">
-                    <img src="assets/users-white.svg" alt="Criar Sala">
+                    <img src="img/users-white.svg" alt="Criar Sala">
                     Criar sala
                 </a>
             </div>
@@ -42,7 +42,7 @@
 
                     <footer>
                         <div>
-                            <img src="assets/lock_black.svg" alt="cadeado">
+                            <img src="img/lock_black.svg" alt="cadeado">
                             Esta pergunta é anônima
                         </div>
                         <button>Enviar</button>
@@ -57,19 +57,19 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="avatar">
+                                <img src="img/user.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const, var e let no JavaScript?</p>
                             </div>
                         </div>
                         <div class="action">
-                            <a href="" class="check">
-                                <img src="assets/check .svg" alt=" marcar como lida">
+                            <a href="#" class="check">
+                                <img src="img/check .svg" alt=" marcar como lida">
                                 Marcar como lida
                             </a>
                             <a href="" class="delete">
-                                <img src="assets/trash 1.svg" alt=" excluir">
+                                <img src="img/trash 1.svg" alt=" excluir">
                                 Excluir
                             </a>
                         </div>
@@ -78,7 +78,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="avatar">
+                                <img src="img/user.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>O que é java Script?</p>
@@ -86,11 +86,11 @@
                         </div>
                         <div class="action">
                             <a href="" class="check">
-                                <img src="assets/check .svg" alt=" marcar como lida">
+                                <img src="img/check .svg" alt=" marcar como lida">
                                 Marcar como lida
                             </a>
                             <a href="" class="delete">
-                                <img src="assets/trash 1.svg" alt=" excluir">
+                                <img src="img/trash 1.svg" alt=" excluir">
                                 Excluir
                             </a>
                         </div>
@@ -99,19 +99,19 @@
                     <div class="question-wrapper read">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/user.svg" alt="avatar">
+                                <img src="img/user.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>O que é python</p>
                             </div>
                         </div>
                         <div class="action">
-                            <a href="" class="check">
-                                <img src="assets/check .svg" alt=" marcar como lida">
+                            <a  class="check">
+                                <img src="img/check .svg" alt=" marcar como lida">
                                 Marcar como lida
                             </a>
-                            <a href="" class="delete">
-                                <img src="assets/trash 1.svg" alt=" excluir">
+                            <a href="#"class="delete">
+                                <img src="img/trash 1.svg" alt=" excluir">
                                 Excluir
                             </a>
                         </div>
@@ -129,19 +129,20 @@
             <h2>Exclui perguntar</h2>
             <p>Tem certeza que você deseja excluir esta pergunta?</p>
 
-            <form action="#">
+            <form action="/check" method="post">
                 <label class="sr-only">Digite sua senha</label>
                 <input type="password" name="password" placeholder="Digite sua senha"> 
 
                 <div class="buttons ">
-                    <div class="button grey">Cancelar</div>
-                    <button class="red">Sim, excluir</button>
+                    <div class="button grey cancel">Cancelar</div>
+                    <button class="buttonForInner"></button>
                 </div>
 
             </form>
         </div>
         
-
     </div>
+    <script src="scripts/main.js" defer type ="module"></script>
+    
 </body>
 </html>
