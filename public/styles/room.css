@@ -156,10 +156,36 @@
 }
 
 
+/* NO QUESTIONS */
 
+.no-questions{
+    margin-top:5.2rem;
+    text-align:center;
+    
+}
 
+.no-questions img{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
 
+.no-questions p{
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
 
+}
+
+.no-questions p + p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight:400;
+    color:var(--grey-dark);
+    margin-top: 1.3rem;
+
+    line-height:2rem;
+}
  
 
 

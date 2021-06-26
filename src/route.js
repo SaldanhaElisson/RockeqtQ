@@ -13,6 +13,7 @@ Router.get('/creat-pass', (req, res) => {
     res.render(path.join(street, '/index'),{page:'creat-pass'})
 })
 Router.get('/room/:roomId',RoomControler.open) // abrir a sala com o id, aqui estamos passando o id  
+Router.post('/enterRoom', RoomControler.enter)
 
 // forma para passar os valores da questões para o controller
 Router.post('/question/create/:roomId', questionControoler.create) 

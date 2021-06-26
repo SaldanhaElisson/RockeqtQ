@@ -39,7 +39,7 @@ module.exports ={
             if(!isRoom){
                 await db.run(`INSERT INTO rooms (
                     id,
-                    password
+                    "password"
                 ) VALUES(
                     ${roomId},
                     ${pass}
@@ -57,9 +57,26 @@ module.exports ={
            
     },
 
-    open(req, res){
-        const roomId = req.params.roomId
-            res.render(path.join(street, "../", "../", "views", "room"), {roomId:roomId})
+    async open(req, res){
+        const db = await Database()
+        const roomId = req.params.roomId   
+        const questions = await db.all(`SELECT * FROM questions WHERE sala = ${roomId} and read = 0`)// enviando a pergunta de acordo com a sala espeifica no banco de dados
+        const questionsRead = await db.all(`SELECT * FROM questions WHERE sala = ${roomId} and read = 1`)
+        
+        let isQuestion;
+
+        if(questions.length == 0 && questionsRead.length == 0){
+            isQuestion = true
+        }
+
+
+        res.render(path.join(street, "../", "../", "views", "room"), {roomId:roomId, questions:questions, questionsRead:questionsRead, isQuestion:isQuestion}) // passando o id e as questões para o ejs
+    },
+
+    enter(req, res){
+        const roomId = req.body.roomid
+
+        res.redirect(`/room/${roomId}`)
     }
 }
 // params e query, query usa ? e params é /
